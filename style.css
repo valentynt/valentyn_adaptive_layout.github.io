@@ -1,0 +1,1405 @@
+@font-face {
+    font-family: 'Proxima Nova Light';
+    src: url('fonts/ProximaNovaLight/subset-ProximaNova-Light.eot');
+    src: url('fonts/ProximaNovaLight/subset-ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+        url('fonts/ProximaNovaLight/subset-ProximaNova-Light.woff2') format('woff2'),
+        url('fonts/ProximaNovaLight/subset-ProximaNova-Light.woff') format('woff'),
+        url('fonts/ProximaNovaLight/subset-ProximaNova-Light.ttf') format('truetype'),
+        url('fonts/ProximaNovaLight/subset-ProximaNova-Light.svg#ProximaNova-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Bold';
+    src: url('fonts/ProximaNovaBold/subset-hneggppdfobmfeppgkglpfhnnicafonh.eot');
+    src: url('fonts/ProximaNovaBold/subset-hneggppdfobmfeppgkglpfhnnicafonh.eot?#iefix') format('embedded-opentype'),
+        url('fonts/ProximaNovaBold/subset-hneggppdfobmfeppgkglpfhnnicafonh.woff2') format('woff2'),
+        url('fonts/ProximaNovaBold/subset-hneggppdfobmfeppgkglpfhnnicafonh.woff') format('woff'),
+        url('fonts/ProximaNovaBold/subset-hneggppdfobmfeppgkglpfhnnicafonh.ttf') format('truetype'),
+        url('fonts/ProximaNovaBold/subset-hneggppdfobmfeppgkglpfhnnicafonh.svg#hneggppdfobmfeppgkglpfhnnicafonh') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova SemiBold';
+    src: url('fonts/ProximaNovaSemibold/subset-ProximaNova-Semibold.eot');
+    src: url('fonts/ProximaNovaSemibold/subset-ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/ProximaNovaSemibold/subset-ProximaNova-Semibold.woff2') format('woff2'),
+        url('fonts/ProximaNovaSemibold/subset-ProximaNova-Semibold.woff') format('woff'),
+        url('fonts/ProximaNovaSemibold/subset-ProximaNova-Semibold.ttf') format('truetype'),
+        url('fonts/ProximaNovaSemibold/subset-ProximaNova-Semibold.svg#ProximaNova-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Regular';
+    src: url('fonts/ProximaNovaRegular/subset-amlgjlahnkgmkjoldgbpeifodofplkkf.eot');
+    src: url('fonts/ProximaNovaRegular/subset-amlgjlahnkgmkjoldgbpeifodofplkkf.eot?#iefix') format('embedded-opentype'),
+        url('fonts/ProximaNovaRegular/subset-amlgjlahnkgmkjoldgbpeifodofplkkf.woff2') format('woff2'),
+        url('fonts/ProximaNovaRegular/subset-amlgjlahnkgmkjoldgbpeifodofplkkf.woff') format('woff'),
+        url('fonts/ProximaNovaRegular/subset-amlgjlahnkgmkjoldgbpeifodofplkkf.ttf') format('truetype'),
+        url('fonts/ProximaNovaRegular/subset-amlgjlahnkgmkjoldgbpeifodofplkkf.svg#amlgjlahnkgmkjoldgbpeifodofplkkf') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    min-width: 320px;
+}
+
+.slider{
+    display: none;
+}
+
+.header {
+    background-image: url('images/football_back.png');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.background{
+    background-color: rgba(19, 20, 53, 0.9);
+    background-position: 100%;
+    padding: 54px 0 110px 0;
+}
+
+.container{
+    max-width: 1532px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.logo{
+    display: flex;
+    margin-bottom: 307px;
+}
+
+.sub-logo{
+    width: 189px;
+    height: 33px;
+    background-image: url('images/logo.png');
+    margin-right: auto;
+}
+
+.link{
+    color: #ffffff;
+    font-family: 'Proxima Nova Light',sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.for-athlets{
+    display: block;
+    font-family: 'Proxima Nova Light',sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.7px;
+    margin-top: 9px;
+}
+
+.for-athlets:hover{
+    color: #5e42b0;
+    transition: 0.3s;
+}
+
+.football{
+    position: relative;
+}
+
+.line{
+    width: 254px;
+    height: 317px;
+    background-image: url('images/line1.png');
+    position: absolute;
+    top: -73px;
+    left: 370px;
+    z-index: 1;
+}
+
+.title{
+    font-family: 'Proxima Nova Bold',sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.title1{
+    position: relative;
+    font-size: 90px;
+    line-height: 100px;
+    letter-spacing: 4.96px;
+    z-index: 2;
+}
+
+.title2{
+    position: relative;
+    font-size: 90px;
+    line-height: 100px;
+    letter-spacing: 4.5px;
+    display: flex;
+    flex-direction: row-reverse;
+    z-index: 0;
+}
+
+.sub-nav{
+    margin-bottom: 181px;
+}
+
+.menu{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.item{
+    margin-right: 50px;
+}
+
+.item:last-child{
+    margin-right: 0;
+}
+
+.link-item{
+    display: block;
+    color: #9071ea;
+    font-size: 14px;
+    line-height: 34px;
+    letter-spacing: 0.7px;
+}
+
+.link-item:hover{
+    color: white;
+    transition: 0.3s;   
+}
+
+.buttoms{
+    display: flex;
+    justify-content: center;
+}
+
+.app-store , .google-play{
+    display: block;
+    position: relative;
+    width: 353px;
+    padding: 25px 0px 25px 109px;
+    background-color: #5e42b0;
+    border-radius:50px;
+    box-shadow: 0 16px 24px #0a0e34;
+}
+
+.app-store{
+    margin-right: 50px;
+}
+
+.app-store:hover ,
+.google-play:hover{
+    background-color: black;
+    transition: 0.3s; 
+}
+
+.google-play{
+    padding: 25px 0px 25px 145px;
+}
+
+.link-app-store , .link-google-play{
+    font-size: 14px;
+    line-height: 0px;
+    letter-spacing: 0.7px;
+}
+
+.sub-app-store{
+    position: absolute;
+    top: 17px;
+    left: 45px;
+    font-size: 45px;
+    line-height: 45px;
+    color: #ffffff;
+}
+
+.sub-google-play{
+    position: absolute;
+    top: 20px;
+    left: 69px;
+    font-size: 45px;
+    line-height: 45px;
+    color: #ffffff; 
+}
+
+.store , .play{
+    font-family: 'Proxima Nova Semibold',sans-serif;
+    font-size: 14px;
+    line-height: 0px;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+}
+/* ==============================================================секция sport========================================================================= */
+
+.sport-athlets{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 97px;
+}
+
+.images-footballer{
+    position: absolute;
+    left: 0;
+    right: auto;
+    top: -55px;
+    z-index: 1;
+}
+
+.footballer{
+    position: relative;
+    width: 678px;
+    height: 950px;
+    background-image: url('images/footballer.png');
+    z-index: 1;
+}
+
+.text-block{
+    position: relative;
+    display: flex;
+    max-width: 1532px;
+    margin: 0 auto;
+    justify-content: flex-end;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.title{
+    color: #e7e7e7;
+    font-family: 'Proxima Nova Bold',sans-serif;
+    font-size: 90px;
+    line-height: 90px;
+    text-transform: uppercase;
+}
+
+.title-footballer{
+    width: 692px;
+}
+
+.mini-section0{
+    padding: 108px 0 94px 0;
+}
+
+.mini-section1{
+    padding-bottom: 56px;
+}
+
+.mini-section2{
+    background-color: #f5f4fa;
+    padding: 60px 0 57px 0;
+}
+
+.mini-section3{
+    background-color: #5e42b0;
+    padding: 87px 0 98px 0;
+}
+
+.line-cross{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 582px;
+    height: 668px;
+    background-image: url('images/line-cross.png');
+}
+
+.wrap{
+    display: flex;
+    margin-bottom: 27px;
+}
+
+.number{
+    color: #000000;
+    font-family: 'Proxima Nova Bold',sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+    border-bottom: 5px solid #5e42b0;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+
+.Growth  .number{
+    border-bottom: 5px solid #efefef;
+}
+
+.Growth  .text{
+    color: #ffffff;
+}
+
+.link-title{
+    display: block;
+    color: #c1c1c1;
+    font-family: 'Proxima Nova Bold',sans-serif;
+    font-size: 36px;
+    line-height: 26px;
+    letter-spacing: 1.8px;
+}
+
+.text{
+    width: 692px;
+    color: #000000;
+    font-family: 'Proxima Nova Regular',sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+
+.images-players{
+    position: absolute;
+    right: 0;
+    left: auto;
+    top: -126px;
+}
+
+.players{
+    position: relative;
+    width: 991px;
+    height: 815px;
+    background-image: url('images/basketball_player.png');
+    z-index: 1;
+}
+
+.line-cross-b{
+    position: absolute;
+    top: 68px;
+    left: 182px;
+    width: 748px;
+    height: 687px;
+    background-image: url('images/line-cross-b.png');
+}
+
+.sport-players{
+    display: flex;
+    flex-direction: column;
+}
+
+.sport-players .text-block{
+    justify-content: flex-start;
+    padding-left: 95px;
+}
+
+.sport-players .text{
+    width: 569px;
+}
+
+.mini-section00{
+    padding-bottom: 92px;
+}
+
+.mini-section11{
+    padding-bottom: 67px;
+}
+
+.mini-section22{
+    padding: 63px 0 67px 0;
+    background-color: #f5f5f7;
+}
+
+.mini-section33{
+    padding: 98px 0 88px 0;
+    background-color: #0a0e34;
+}
+
+.mini-section33 .text{
+    color: #ffffff;
+}
+
+.mini-section33 .number{
+    color: #9173e6;
+    border-bottom: 5px solid #ffffff;
+}
+/* ===========================================================================Секция people================================================================================ */
+
+.people{
+    position: relative;
+}
+
+.sub-people{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.image{
+    width: 50%;
+    height: 100%;
+    background-position: center;
+    position: absolute;
+    right: 50%;  
+}
+
+.first{
+    background: url('images/black_white.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.be_active{
+    width: 50%;
+    position: relative;
+    padding: 257px 0 122px 128px;
+}
+
+.block{
+    padding: 62px 72px;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #5e42b0;
+    position: absolute;
+    top: 211px;
+    left: -84px;
+}
+
+.sub-block{
+    color: #f5f6f7;
+    font-family: 'Proxima Nova Bold',sans-serif;
+    font-size: 24px;
+    line-height: 34px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    border-bottom: 5px solid #8e7bc8;
+    border-radius: 2px;
+}
+
+.title-be-active{
+    margin-bottom: 117px;
+}
+
+.text-people{
+    width: 55%;
+    max-width: 346px;
+    color: #000000;
+    font-family: 'Proxima Nova Regular',sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 1.2px;
+    margin-bottom: 85px;
+}
+
+.rectangle{
+    width: 22px;
+    height: 5px;
+    display: inline-block;
+    background-image: url('images/rectangle.png');
+}
+
+.second{
+    background: url('images/trainer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 50%;
+}
+
+.find_contact{
+    width: 50%;
+    position: relative;
+    padding: 257px 111px 122px 0px;
+}
+
+.short{
+    justify-content: flex-start;
+}
+
+.block-find_contact{
+    padding: 62px 72px;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #5e42b0;
+    position: absolute;
+    top: 211px;
+    right: -84px;
+}
+
+.title-find-contact{
+    margin-bottom: 75px;
+}
+
+.text-find-contact{
+    width: 65%;
+    max-width: 420px;
+}
+
+.third{
+    background: url('images/group_people.png');
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+.sub-short{
+    justify-content: flex-end;
+}
+
+.work_it{
+    width: 50%;
+    position: relative;
+    padding: 257px 0 122px 128px; 
+}
+
+.text-work_it{
+    width: 82%;
+    max-width: 515px;
+}
+/* =================================================================================секция footer========================================================================= */
+
+.footer{
+    width: 100%;
+    height: 100%;
+    background-image: url("images/tribunes.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer-up{
+    background-color: rgba(6, 18, 66, 0.93);
+    padding: 229px 0 197px 0;
+}
+
+.loader{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 151px;
+}
+
+.sub-loader{
+    margin-right: 36px;
+}
+
+.sub-loader2{
+    display: none;
+}
+
+.two-title{
+    position: relative;
+}
+
+.rectangle-big{
+    background-image: url("images/rectangle-footer-big.png");
+    width: 275px;
+    height: 314px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -95px;
+    right: 119px;
+}
+
+.rectangle-small{
+    background-image: url("images/rectangle-footer-small.png");
+    width: 138px;
+    height: 157px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -23px;
+    left: 24px;
+}
+
+.title-main{
+    position: relative;
+    color: #ffffff;
+    font-family: 'Proxima Nova Bold',sans-serif;
+    font-size: 90px;
+    line-height: 60px;
+    text-transform: uppercase;
+    letter-spacing: 4.96px;
+    margin: 18px 0 18px 0;
+    z-index: 2;
+}
+
+.title-small{
+    position: relative;
+    color: #a496ca;
+    font-family: 'Proxima Nova Bold',sans-serif;
+    font-size: 36px;
+    line-height: 34px;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+.footer-down{
+    background-color: rgba(10, 17, 51, 0.97) ;
+    padding: 71px 0 70px 0;
+}
+
+.footer .sub-footer-down{
+    display: flex;
+    align-items: center;
+}
+
+.sub-footer-icons1 ,
+.sub-footer-icons2 ,
+.sub-footer-icons3 {
+    color: #ffffff;
+    font-size: 25px;
+    line-height: 27px;
+    text-decoration: none;
+}
+
+.sub-footer-icons1:hover ,
+.sub-footer-icons2:hover ,
+.sub-footer-icons3:hover{
+    color: #5e42b0;
+    transition: 0.3s;
+}
+
+.sub-footer-icons1{
+    margin-right: 41px;
+}
+
+.sub-footer-icons2{
+    margin-right: 31px;
+}
+
+.footer-icons{
+    margin-right: auto;
+}
+
+@media (max-width:1531px){
+
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .title1{
+        font-size: 64px;
+        line-height: 74px;
+        margin-left: 71px;
+    }
+
+    .title2{
+        font-size: 64px;
+        line-height: 74px;
+        margin-left: 187px;
+    }
+
+    .line{
+        z-index: 0;
+        left: 249px;
+        top: -44px;
+    }
+
+    .logo{
+        margin-bottom: 194px;
+    }
+
+    .sub-nav{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 116px;
+    }
+
+    .football{
+        margin-bottom: 184px;
+    }
+
+    .background{
+        padding: 54px 0 91px 0;
+    }
+    /* ==============================================================секция sport========================================================================= */
+
+    .sport-athlets{
+        margin-bottom: 64px;
+    }
+
+    .mini-section0{
+        padding: 82px 0 44px 0;
+    }
+
+    .text-block{
+        margin: 0 auto;
+    }
+
+    .title-footballer{
+        width: 61%;
+        max-width: 810px;
+    }
+
+    .images-footballer{
+        position: absolute;
+        left: -162px;
+        right: auto;
+        top: 22px;
+        width: max-content;
+        height: max-content;
+    }
+    
+    .footballer{
+        display: block;
+        position: relative;
+        width: 497px;
+        height: 699px;
+        background-image: url('images/footballer2.png');
+        margin: 0px;
+    }
+
+    .line-cross{
+        position: absolute;
+        top: -15px;
+        left: 115px;
+        width: 288px;
+        height: 354px;
+        background-image: url('images/line-cross-f2.png');
+    }
+
+    .connection{
+        width: 61%;
+        max-width: 810px;
+    }
+
+    .text{
+        width: 100%;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.9px;
+    }
+
+    .Collaboration{
+        width: 61%;
+        max-width: 810px;
+    }
+
+    .mini-section2{
+        padding: 40px 0 33px 0;
+    }
+
+    .Growth{
+        width: 61%;
+        max-width: 810px;
+    }
+
+    .mini-section3{
+        padding: 40px 0 32px 0;
+    }
+
+    .images-players{
+        position: absolute;
+        width: 438px;
+        left: auto;
+        right: 0px;
+        top: -28px;
+        overflow: hidden; 
+    }
+
+    .players{
+        position: relative;
+        width: 690px;
+        height: 565px;
+        background-image: url('images/player2.png');
+    }
+
+    .line-cross-b{
+        position: absolute;
+        top: 68px;
+        left: 182px;
+        width: 274px;
+        height: 404px;
+        background-image: url('images/line-cross2.png');
+    }
+
+    .sport-players .text-block{
+        padding-left: 30px;
+    }
+
+    .title-players{
+        width: 61%;
+        max-width: 810px;   
+    }
+
+    .sport-players .text{
+        width: 100%;
+    }
+
+    .connection-players{
+        width: 51%;
+        max-width: 810px;
+    }
+
+    .Collaboration-players{
+        width: 61%;
+        max-width: 810px; 
+    }
+
+    .Growth-players{
+        width: 61%;
+        max-width: 810px;
+    }
+
+    .mini-section00{
+        padding-bottom: 44px;
+    }
+
+    .mini-section11{
+        padding-bottom: 12px;
+    }
+
+    .mini-section22{
+        padding: 63px 0 65px 0;
+    }
+
+    .mini-section33{
+        padding: 52px 0 50px 0;
+    }
+    /* ==============================================================секция people========================================================================= */
+
+    .people .container{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .sub-people{
+        flex-direction: column; 
+    }
+    
+    .image{
+        width: 100%;
+        height: 584px;
+        background-position: center;
+        position: static;
+    }
+    
+    .be_active{
+        width: 100%;
+        padding: 87px 0 63px 34px; 
+    }
+    
+    .title-be-active{
+        margin-bottom: 34px;
+    }
+    
+    .text-people{
+        width: 90%;
+        max-width: 655px;
+        margin-bottom: 31px;
+    }
+    
+    .block{
+        padding: 42px 46px;
+        top: -86px;
+        left: 33px;
+    }
+
+    .find_contact{
+        width: 100%;
+        padding: 77px 0px 70px 34px;
+    }
+
+    .title-find-contact{
+        margin-bottom: 34px;
+    }
+
+    .block-find_contact{
+        padding: 42px 46px;
+        top: -86px;
+        left: 33px;
+        right: auto;
+    }
+
+    .work_it{
+        width: 100%;
+        padding: 78px 0 104px 35px; 
+    }
+    /* =====================================================секция footer=============================================================== */
+    
+    .footer{
+        background-position: center;
+    }
+
+    .footer-up{
+        padding: 128px 0 129px 0;
+    }
+
+    .loader{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 198px;
+    }
+
+    .sub-loader{
+        margin-bottom: 82px;
+    }
+
+    .title-main{
+        font-size: 80px;
+        line-height: 60px;
+        letter-spacing: 4.85px;
+        margin: 18px 0 18px 0;
+    }
+
+    .title-small{
+        font-size: 36px;
+        line-height: 40px;
+        padding-left: 11px;
+    }
+
+    .app-store{
+        margin-right: 30px;
+        width: 313px;
+    }
+
+    .google-play{
+        width: 313px;
+    }
+
+    .footer .sub-logo ,
+    .footer .for-athlets{
+        display: none;
+    }
+
+    .footer-icons{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer-down{
+        padding: 34px 0 32px 0;
+    }
+
+}
+
+@media (max-width:767px){
+
+    .container{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .logo{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 136px;
+    }
+
+    .sub-logo{
+        width: 137px;
+        height: 24px;
+        background-image: url("images/logo2.png");
+        margin-right: 0;
+    }
+
+    .for-athlets{
+        opacity: 0;
+    }
+
+    .title1{
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: 1.76px;
+        margin-left: 0;
+        margin-bottom: 18px;
+    }
+
+    .title2{
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: 1.6px;
+        margin-left: 50px; 
+    }
+
+    .football{
+        margin-bottom: 118px;
+    }
+
+    .line{
+        background-image: url('images/line2.png');
+        width: 142px;
+        height: 176px;
+        left: 70px;
+        top: -35px;
+    }
+
+    .nav{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .sub-nav{
+        margin-bottom: 0px;  
+    }
+
+    .menu{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .buttoms{
+        max-width: 370px;
+        width: 100%;
+        align-self: center;
+        margin-bottom: 45px;
+    }
+
+    .app-store{
+        width: 50%;
+        max-width: 450px;
+        margin-right: 8px;
+    }
+
+    .google-play{
+        width: 50%;
+        max-width: 450px;
+    }
+
+    .app-store , .google-play{
+        padding: 8px 0px 9px 45px;
+        border-radius:50px;
+        box-shadow: 0 10px 16px #0a0e34;
+    }
+
+    .google-play{
+        padding: 8px 0px 9px 54px;
+    }
+
+    .link-app-store ,.link-google-play{
+        font-size: 8px;
+        line-height: 0px;
+        letter-spacing: 0.4px;
+        margin-bottom: 0;
+    }
+
+    .store , .play{
+        font-size: 8px;
+        letter-spacing: 0.4px;
+    }
+
+    .sub-app-store{
+        top: 11px;
+        left: 18px;
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .sub-google-play{
+        top: 12px;
+        left: 18px;
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .background{
+        padding: 39px 0px 20px 0px;
+    }
+
+    .item{
+       margin-right: 33px;
+    }
+
+    .link-item{
+    font-size: 12px;
+    line-height: 26px;
+    letter-spacing: 0.6px;
+    }
+    /* ==============================================================секция sport========================================================================= */
+
+    .sport-athlets , .sport-players{
+        display: none;
+    }
+
+    .slider{
+        display: block;
+    }
+
+    .mini-container{
+        padding: 0;
+        max-width: 767px;
+        min-width: 319px;
+    }
+
+    .sport-first{
+        background-color: #f5f4f9;
+        padding: 81px 16px 25px 14px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-footballer{
+        padding: 20px 16px 0 14px;
+        position: relative;
+    }
+
+    .slider .title-footballer{
+        width: 100%;
+        font-size: 50px;
+        line-height: 60px;
+        text-align: left;
+        margin-bottom: 14px;
+    }
+
+    .slider .title-players{
+        width: 100%;
+        font-size: 50px;
+        line-height: 60px;
+        text-align: left;
+        margin-bottom: 14px;
+    }
+
+    .mini-footballer{
+        height: 226px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    .sub-mini-footballer{
+        width: 211px;
+        height: 281px;
+        position: absolute;
+        top: 0;
+    }
+
+    .connection{
+        width: 100%;
+    }
+
+    .Collaboration{
+        width: 100%;
+    }
+
+    .Growth{
+        width: 100%;
+    }
+
+    .link-title{
+        font-size: 28px;
+        line-height: 28px;
+        letter-spacing: 1.4px;
+    }
+
+    .slider .wrap{
+        margin-bottom: 21px;
+    }
+
+    .slider .number{
+        display: inline-block;
+        font-size: 14px;
+        line-height: 26px;
+        letter-spacing: 0.7px;
+        border-radius: 2px;
+        border-bottom: 4px solid #5e42b0;
+    }
+
+    .slider .text{
+        color: #000000;
+        font-family: 'Proxima Nova Regular',sans-serif;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0.7px;
+    }
+
+    .slider .fotorama__dot{
+        width: 10px;
+        height: 10px;
+        background-color: #d8d8d8;
+        display: block;
+        border-radius: 6px;
+        border: 1px solid transparent;
+        left: 12px;
+    }
+
+    .slider .fotorama__nav__frame.fotorama__active .fotorama__dot {
+        width: 0;
+        height: 0;
+        border-width: 5px;
+        background-color: #5c3caf;
+    }
+
+    .slider .fotorama__wrap--css3 .fotorama__stage {
+        height: 153px !important;
+    }
+
+    .connection-players{
+        width: 100%;
+    }
+
+    .Collaboration-players{
+        width: 100%;
+    }
+
+    .Growth-players{
+        width: 100%;
+    }
+
+    .img-player{
+        position: relative;
+        padding: 30px 16px 0px 14px;
+    }
+
+    .mini-player{
+        height: 215px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    .sub-mini-player{
+        width: 302px;
+        height: 248px;
+        position: absolute;
+        top: 0;
+    }
+     
+    .sport-second{
+        background-color: #f5f4f9;
+        padding: 81px 16px 25px 14px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .slider .sport-second .fotorama__wrap--css3 .fotorama__stage {
+        height: 113px !important;
+    }
+
+    .fotorama__wrap--css3 .fotorama__arr{
+        opacity: 0;
+    }
+    /* ==============================================================секция people========================================================================= */
+    
+    .image{
+        height: 351px;
+    }
+
+    .block{
+        padding: 25px 28px 25px 28px;
+        top: -62px;
+        left: 19px;
+
+    }
+
+    .sub-block{
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.7px;
+        border-bottom: 4px solid #8e7bc8;
+    }
+
+    .title{
+        font-size: 28px;
+        line-height: 34px;
+        letter-spacing: 1.4px;
+    }
+
+    .be_active{
+        padding: 35px 0 51px 19px; 
+    }
+
+    .title-be-active{
+        margin-bottom: 21px;
+    }
+
+    .text-people{
+        width: 75%;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.8px;
+        margin-bottom: 8px;
+    }
+
+    .block-find_contact{
+        padding: 25px 28px 25px 28px;
+        top: -62px;
+        left: 19px;
+        right: auto;
+    }
+
+    .find_contact{
+        padding: 38px 0px 51px 19px;
+    }
+
+    .title-find-contact{
+        margin-bottom: 21px;
+    }
+
+    .text-find-contact{
+        width: 90%;
+        max-width: 655px;
+    }
+
+    .work_it{
+        padding: 38px 0 50px 18px; 
+    }
+
+    .text-work_it{
+        width: 90%;
+    }
+    /* ==========================================================================секция footer======================================================================= */
+
+    .loader{
+        margin-bottom: 51px;
+    }
+
+    .sub-loader{
+        display: none;
+    }
+
+    .sub-loader2{
+        display: block;
+    }
+
+    .footer-up{
+        padding: 97px 0 127px 0;
+    }
+
+    .two-title{
+        padding: 52px 0 12px 0;
+    }
+
+    .title-main{
+        font-size: 34px;
+        line-height: 36px;
+        letter-spacing: 1.7px;
+        margin: 0px 0 3px 0;
+    }
+
+    .title-small{
+        font-size: 15px;
+        line-height: 17px;
+        letter-spacing: 0.7px;
+        padding-left: 0;
+    }
+
+    .footer .buttoms{
+        margin-bottom: 0;
+        margin: 0 auto;
+    }
+
+    .rectangle-big{
+        background-image: url("images/rectangle-footer-big2.png");
+        width: 99px;
+        height: 125px;
+        top: 15px;
+        right: 65px;
+    }
+
+    .rectangle-small{
+        background-image: url("images/rectangle-footer-small2.png");
+        width: 62px;
+        height: 71px;
+        top: 43px;
+        left: 0;
+    }
+
+    .footer-down{
+        padding: 18px 0 12px 0;
+    }
+
+    .sub-footer-icons1 ,
+    .sub-footer-icons2 ,
+    .sub-footer-icons3 {
+        font-size: 17px;
+        line-height: 19px;
+    }
+
+    .sub-footer-icons2{
+        margin-right: 38px;
+    }
+
+}
