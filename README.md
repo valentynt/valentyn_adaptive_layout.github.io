@@ -1,0 +1,1 @@
+# valentyn_adaptive_layout.github.io
